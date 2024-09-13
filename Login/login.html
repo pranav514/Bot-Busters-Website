@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" href="styles.css">
+ <title>Login Page with Bot Detection</title>
+ </head>
+ <body>
+ <div class="login-container">
+ <b><h1>Demo</h1></b>
+ <form id="signInForm" action="#" method="post">
+ <label for="username">Username:</label>
+ <input
+ type="text"
+ id="first"
+ name="first"
+ placeholder="username, email, or mobile"
+ required
+ />
+
+ <label for="password">Password:</label>
+ <input
+ type="password"
+ id="password"
+ name="password"
+ placeholder="enter valid password"
+ required
+ />
+
+ <!-- Hidden input for bot detection -->
+ <input type="checkbox" id="verified" name="verified" style="display:none;" />
+
+ <button type="submit" id="submit-btn" disabled>Login</button>
+
+ <!-- Verification message -->
+ <p id="verification-status">Verifing</p>
+ </form>
+
+ <p>Don't have an account? <a href="signup1.html">Sign Up</a></p>
+ </div>
+
+ <footer>
+ <i>
+ &copy; 2024 Bot-Busters &ensp;•&ensp; All rights reserved &ensp;•&ensp; 7773334456
+ </i>
+ </footer>
+
+<script src="script.js"></script>
+ 
+ </body>
+</html>
